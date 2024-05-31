@@ -3,7 +3,7 @@ const app = express();
 const mongoose = require("mongoose");
 const port = process.env.PORT || 3000;
 
-
+app.use(express.static("public"));
 app.get("/index1.html", (req, res) => {
     res.status(200).sendFile(__dirname + "/public/index1.html");
   });
