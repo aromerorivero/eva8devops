@@ -9,10 +9,7 @@ app.get("/", (req, res) => {
   res.status(200).sendFile(__dirname + "/public/index1.html");
 });
 
-app.get("/index1.html", (req, res) => {
-    res.status(200).sendFile(__dirname + "/public/index1.html");
-  });
-  
+
   app.get("/index2.html", (req, res) => {
     res.status(200).sendFile(__dirname + "/public/index2.html");
   });
